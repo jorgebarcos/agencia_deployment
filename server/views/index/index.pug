@@ -1,0 +1,33 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Integer semper justo eget nulla mollis, ut rutrum risus tempor. Ut ut erat venenatis, gravida massa ut, condimentum orci. Duis suscipit lectus sed diam cursus imperdiet. Mauris vehicula dui ut egestas sollicitudin. Praesent quis lacinia risus. Cras pretium dolor non tortor condimentum, eget tincidunt erat posuere.
+
+                p Integer semper justo eget nulla mollis, ut rutrum risus tempor. Ut ut erat venenatis, gravida massa ut, condimentum orci. Duis suscipit lectus sed diam cursus imperdiet. Mauris vehicula dui ut egestas sollicitudin. Praesent quis lacinia risus. Cras pretium dolor non tortor condimentum, eget tincidunt erat posuere.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+
+        h2.text-center.mb-5 Próximos Viajes
+        include ../layout/partials/viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Diciembre 2019 - 28 de Diciembre 2019
+                        p.precio $2,500 USD
+
+    .container
+        h2.text-center.my-5 Testimoniales
+        include ../layout/partials/testimoniales
