@@ -39,7 +39,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // cargar las rutas
 app.use('/', routes());
 
-/** Puesto y host para la app */
+/** Puerto y host para la app */
 
 const host = '0.0.0.0';
 const port = process.env.PORT || 3000;
